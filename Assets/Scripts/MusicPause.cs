@@ -14,6 +14,10 @@ public class MusicPause : MonoBehaviour
         MusicPlayer.Pause();
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        MusicPlayer.Play();
 
+    }
 
 }
